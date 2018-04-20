@@ -11,7 +11,6 @@ elective_opted = StringVar()
 CGPA = StringVar()
 
 
-# --------------------------- FUNCTIONS -----------------------------------------------------------------
 
 def Add_student_name():
     f = open('C:/Users/Admin/Desktop/college_db.txt', 'a')
@@ -245,7 +244,7 @@ def Get_Next_Record():
 
 
 top.configure(background="grey")
-# ------------------------------ LABELS ----------------------------------------------------------
+
 
 w = tkinter.Label(top, text="NCU STUDENT DETAILS", bg="grey", font=('calibri', 15, 'bold'), underline=-1).grid(row=0,
                                                                                                                column=1)
@@ -255,7 +254,7 @@ tkinter.Label(top, text="BRANCH:", bg="grey", font=('calibri', 15, 'bold')).grid
 tkinter.Label(top, text="ELECTIVE OPTED:", bg="grey", font=('calibri', 15, 'bold')).grid(row=8, sticky=W)
 tkinter.Label(top, text="CGPA:", bg="grey", font=('calibri', 15, 'bold')).grid(row=9, sticky=W)
 
-# ------------------------------ ENTRIES ---------------------------------------------------------
+
 
 E1 = tkinter.Entry(top, textvariable=student_name)
 E2 = tkinter.Entry(top, textvariable=roll_no)
@@ -268,7 +267,7 @@ E3.grid(row=7, column=1)
 E4.grid(row=8, column=1)
 E5.grid(row=9, column=1)
 
-# ------------------------------ BUTTONS -------------------------------------------------------------------
+
 
 fr = tkinter.Button(top, text="|<", width=15, bg="white", font=('Ariel', 15, 'bold'),
                     command=Get_First_Record).grid(row=10, column=0)
@@ -304,7 +303,7 @@ elective_opted = StringVar()
 CGPA = StringVar()
 
 
-# --------------------------- FUNCTIONS -----------------------------------------------------------------
+
 
 def Add_Book():
     f = open('C:/Users/Admin/Desktop/college_db.txt', 'a')
@@ -540,8 +539,8 @@ def Get_Next_Record():
     f.close()
 
 
-top.configure(background="lightgreen")
-# ------------------------------ LABELS ----------------------------------------------------------
+top.configure(background="grey")
+
 
 w = tkinter.Label(top, text="NCU STUDENT DETAILS", bg="yellow", font=('calibri', 15, 'bold'), underline=12).grid(row=0,
                                                                                                                  column=1)
@@ -551,7 +550,7 @@ tkinter.Label(top, text="BRANCH:", bg="grey", font=('calibri', 15, 'bold')).grid
 tkinter.Label(top, text="ELECTIVE_SUBJECT:", bg="grey", font=('calibri', 15, 'bold')).grid(row=8, sticky=W)
 tkinter.Label(top, text="CGPA:", bg="grey", font=('calibri', 15, 'bold')).grid(row=9, sticky=W)
 
-# ------------------------------ ENTRIES ---------------------------------------------------------
+
 
 E1 = tkinter.Entry(top, textvariable=student_name)
 E2 = tkinter.Entry(top, textvariable=roll_no)
@@ -564,7 +563,7 @@ E3.grid(row=7, column=1)
 E4.grid(row=8, column=1)
 E5.grid(row=9, column=1)
 
-# ------------------------------ BUTTONS -------------------------------------------------------------------
+
 
 fr = tkinter.Button(top, text="|<", width=15, bg="white", font=('Ariel', 15, 'bold'),
                     command=Get_First_Record).grid(row=10, column=0)
